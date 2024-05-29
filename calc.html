@@ -1,0 +1,24 @@
+<head>
+    <title>Total Amount Calculator</title>
+    <script>
+        function calculateTotal() {
+            // Get the quantity input value
+            var quantity = parseInt(document.getElementById("quantity").value);
+
+            // Define the price per item
+            var pricePerItem = 10; // Change this to your actual price
+
+            // Calculate the total amount to pay
+            var totalAmount = quantity * pricePerItem;
+
+            // Display the total amount
+            document.getElementById("total").innerHTML = "Total Amount to Pay: $" + totalAmount.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Quantity and Total Amount Calculator</h1>
+    <label for="quantity">Enter Quantity:</label>
+    <input type="number" id="quantity" min="1" onchange="calculateTotal()">
+    <p id="total">Total Amount to Pay: RS.0.00</p>
+</body>

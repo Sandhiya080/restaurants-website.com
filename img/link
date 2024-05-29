@@ -1,0 +1,7 @@
+ <ul class="navbar">
+  <li><a href="about.html"><button>Home</button></a></li>
+  <li><a href="reservation.html"><button>About</button></a></li>
+  <li><a href="menu.html"><button>Services</button></a></li>
+  <li><a href="shop.html"><button>Contact</button></a></li>
+</ul>
+

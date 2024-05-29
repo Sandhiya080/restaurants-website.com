@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MENU</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#food-menu" class="btn btn-primary">Menu</a>
+          <h1 class="main-title" id="home">Eat Right Food</h1>
+           <center> <h2>Eat Healthy,it is good for our health</h2></center>
+     <section id="food-menu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+
+                <h2 class="food-titile">Item 1</h2>
+                <h1 class="food-price">Price:&#8377; 250</h1>
+                <body>
+                 <h1><label for="quantity">Enter Quantity:</label></h1>
+                  <input type="number" id="quantity" min="1" onchange="calculateTotal()">
+                  <p id="total">Total Amount to Pay: RS.0.00</p>
+                </body>
+              <script>
+                function calculateTotal() {
+              var quantity = parseInt(document.getElementById("quantity").value);
+                    var pricePerItem = 250; 
+                    var totalAmount = quantity * pricePerItem;
+                    document.getElementById("total").innerHTML = "Total Amount to Pay: $" + totalAmount.toFixed(2);
+   } </script>
+                 
+                  <div class="FOR PAYMENT">
+         <div class="row-flex">
+                      <div class="flex-column-form">
+              <h3>Ready To Pay</h3>
+                      <form action="Payment" method="post"></form>
+                <div class="food-img"></div>
+                    <center><img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" height="700px" breadth="500px" /></center>
+              
+
+        </div> 
+            </div>
+            </div>
+
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <h2 class="food-titile">Item 2</h2>
+                    <h1 class="food-price">Price: &#8377; 250</h1>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                      </div>
+                      <div class="FOR PAYMENT">
+                        <div class="row-flex">
+                                     <div class="flex-column-form">
+                             <h3>Ready To Pay</h3>
+                                     <form action="Payment" method="post"></form>
+                               <div class="food-img"></div>
+                   <center> <img src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg" height="700px" breadth="500px" /></center>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <h2 class="food-titile">Item 3</h2>
+                    <h1 class="food-price">Price:&#8377; 250</h1>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                      </div>
+                      <div class="FOR PAYMENT">
+                        <div class="row-flex">
+                                     <div class="flex-column-form">
+                             <h3>Ready To Pay</h3>
+                                     <form action="Payment" method="post"></form>
+                               <div class="food-img"></div>
+                    <center><img src="https://i.postimg.cc/8zbCtYkF/food-menu3.jpg" height="700px" breadth="500px" /></center>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <h2 class="food-titile">Item 4</h2>
+                    <h1 class="food-price">Price: &#8377; 250</h1>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                      </div>
+                      <div class="FOR PAYMENT">
+                        <div class="row-flex">
+                                     <div class="flex-column-form">
+                             <h3>Ready To Pay</h3>
+                                     <form action="Payment" method="post"></form>
+                               <div class="food-img"></div>
+                               <script src="//checkout.stripe.com/v2/checkout.js"
+                class="stripe-button"
+                data-key="pk_test_51NLkfSFWTZbFLHUgOJHmc2XJFxS8OA8U4UvoNdC3kgR0D44HMGPt44InIdhJ7qkk1TfYOplmFob12ghCXolRQx300W1MxEAnJ"
+                data-amount="c%- Estimated_Price %>"
+                data-currency="inr"
+                data-name="BARBIES"
+                data-description="DELICIOUS"
+                data-location="auto">
+                </script>
+                 <center>  <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" height="700px" breadth="500px" /></center>
+
+      
+                </div>
+                </div>
+            </div>
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <h2 class="food-titile">Item 5</h2>
+                    <h1 class="food-price">Price:&#8377; 250</h1>
+                    <div class="counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input type="text" value="1">
+                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                      </div>
+                       <div class="FOR PAYMENT">
+                <div class="row-flex">
+                  <div class="flex-column-form">
+                <body>
+                  <h3>Ready To Pay</h3>
+                  <form action="Payment" method="post"></form>
+                  <script src="//checkout.stripe.com/v2/checkout.js"
+                  class="stripe-button"
+                  data-key="pk_test_51NLkfSFWTZbFLHUgOJHmc2XJFxS8OA8U4UvoNdC3kgR0D44HMGPt44InIdhJ7qkk1TfYOplmFob12ghCXolRQx300W1MxEAnJ"
+                  data-amount="c%- Estimated_Price %>"
+                  data-currency="inr"
+                  data-name="BARBIES"
+                  data-description="DELICIOUS"
+                  data-location="auto">
+                  </script>
+                  <center><img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" height="700px" breadth="500px" /></center>
+                  </body>
+                </div>
+                </div>
+            </div>
+                  
+        
+
+            <script type="text/javascript">
+                function increaseCount(a, b) {
+                  var input = b.previousElementSibling;
+                  var value = parseInt(input.value, 10); 
+                  value = isNaN(value)? 0 : value;
+                  value ++;
+                  input.value = value;
+                }
+                function decreaseCount(a, b) {
+                  var input = b.nextElementSibling;
+                  var value = parseInt(input.value, 10); 
+                  if (value > 1) {
+                    value = isNaN(value)? 0 : value;
+                    value --;
+                    input.value = value;
+                  }
+                }
+             
+</body>
+</html>

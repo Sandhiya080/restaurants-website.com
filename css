@@ -1,0 +1,28 @@
+.navbar {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the list items */
+.navbar li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Style the buttons */
+.navbar button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add hover effect to buttons */
+.navbar button:hover {
+  background-color: #2980b9;
+}
